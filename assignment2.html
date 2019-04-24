@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Assignment 1: Laser Cut Press Fit Construction Kit </title> 
+        <title>Assignment 2</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -12,13 +12,33 @@
     <body> 
 
         <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
+            <h1>Assignment 2: CAD Model + Fabricated Output</h1>
             <p>
-            <img src="red-panda.jpg" width=400></a>
+            <img src="presskit.JPG" width=400></a>
             </p>
             <p>
-            Here is all the documentation for assignment 2!
+                <b> Process:</b> <br />
             </p>
+                    <p>
+                     This assignment was very difficult for me because it took me a while to understand how Rhino
+                     and Grasshopper worked. I knew I wanted to keep my shapes simple until I got the hang of Rhino
+                     and Grasshopper. 
+                        <br />
+                        <br />
+                        I used Grasshopper to make circles and sqaures with slits to put the pieces together. 
+                        <br />
+                        <b> Square </b> <br />
+                        I used the Construct Domain Function with number sliders to build the square from the center point
+                        and to be able to manipulate each side of the square individually. Each domain function was added
+                        as an X and Y input. <br />
+                        Once the main square was built using the Construct Domain Function, I used number sliders in the
+                        X and Y inputs of the rectangle and connected the sliders to Multiplication function, Vector XYZ, Move
+                        and Polar Array to make rectangles that would serve as slits. I'm able to move the number sliders on the 
+                        X value to adjust the width of the slits. Finally, I used Region Difference to trim the shape. 
+    </p> 
+                      
+                        
+                       
         </div>
         
     </body>
