@@ -1,1 +1,103 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
+        <title>Assignment 2</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Assignment 2: CAD Model + Fabricated Output</h1>
+            <p>
+            <img src="assign2kits.jpg" width=400></a>
+            </p>
+            <p>
+                <b> Process:</b> <br />
+            </p>
+                    <p>
+                     This assignment was very difficult for me because it took me a while to understand how Rhino
+                     and Grasshopper worked. I knew I wanted to keep my shapes simple until I got the hang of Rhino
+                     and Grasshopper. 
+                        <br />
+                        <br />
+                        I used Grasshopper to make circles and squares with slits to put the pieces together. 
+                        <br /> <br />
+                        <i> Square </i> <br /> <br />
+                        I used the Construct Domain Function with number sliders to build the square from the center point
+                        and to be able to manipulate each side of the square individually. Each domain function was added
+                        as an X and Y input. <br />
+                        Once the main square was built using the Construct Domain Function, I used number sliders in the
+                        X and Y inputs of the rectangle and connected the sliders to Multiplication function, Vector XYZ, Move
+                        and Polar Array to make rectangles that would serve as slits. I'm able to move the number sliders on the 
+                        X value to adjust the width of the slits. Finally, I used Region Difference to trim the shape. 
+                        <br />
+                        <br />
+                       
+                        
+                        <img src="thinvsthicksquare.jpg" width=400></a> <br />
+                        Square 1: <br />
+                        <img src="thinsquaregh.jpg" width=400></a>
+                        <br /><br />
+                        <img src="2mmsquare.jpg" width=400></a> <br />
+
+                        Square 2:<br />
+                        <img src="thicksquaregh.jpg" width=400></a> <br /> <br />
+                        <img src="3mmsquare.jpg" width=400></a>
+                        <br /> <br />
+                        <i>Circle</i> <br /> <br />
+                        For the circle shape, I used the circle function to build it and used a number slider to set the radius. <br />
+                        I kept the circle build simple, but ran into some issues building in the slits. I used rectangle to build the slits
+                        and added number sliders to the X & Y inputs. For some reason, using Domain didn't work for the circle
+                        so I connected the Rectangle to Move and connected the X input to Multiplication, Vector XYZ and Move.
+                        Finally, I used the polar array function to create multiple slits (I set the count to 4) and I used Region Difference to trim the shape.
+                        <br />
+                        <br />
+<img src="thinvsthickcircle.jpg" width=400></a>
+                        
+                         <br /> <br />
+                        Circle 1: <br />
+                        <img src="Thincirclegh.jpg" width=400></a> <br />
+                        <img src="2mmcircle.jpg" width=400></a>
+                        <br />
+                        <br />
+                        Circle 2: <br />
+
+                        <img src="thickcirclegh.jpg" width=400></a> <br />
+                        <img src="3mmcircle.jpg" width=400></a>
+                        <br />
+                        <br />
+<b>Issues</b> <br /> <br />
+First, understanding how grasshopper even works. Joshua did a good job explaining in Office Hours that for each function
+to work you need some sort of input so that helped visualize how the program worked. Once I understood that it was easier to 
+problem solve how to make the shapes. The next issues I faced was centering the points to make the shapes. I googled it and 
+found a forum that helped solve the issue. See the forum <a href="https://www.grasshopper3d.com/forum/topics/rectangle-on-center/">here</a>
+   <br /> 
+The second issue I came across was centering the slits on the circle. I used Multiplication, Vector XYZ and Move to solve that issue.
+Hannah Nursalim helped me with that.
+<br /> <br />
+<b>Final Designs </b> <br /> <br />
+I used Illustrator to laser cut the shapes. 
+Design in two different thickness <br />
+<img src="thinpresskit.jpg" width=400></a> <br />
+<img src="thickpresskit.jpg" width=400></a> <br />
+<br />
+<br />
+<b>Source Files and Peer Attributions </b>
+Centering points on rectangles <a href="https://www.grasshopper3d.com/forum/topics/rectangle-on-center/">here</a> <br />
+Grasshopper files for Square <a href="https://github.com/equepons/equepons.github.io/blob/master/SquareShape.gh/">here</a> <br />
+Grasshopper files for Circle <a href="https://github.com/equepons/equepons.github.io/blob/master/CircleShape.gh/">here</a> <br />
+Hannah and Dave for help in grasshopper 
+
+</p> 
+                      
+                        
+                       
+        </div>
+        
+    </body>
+</html>
